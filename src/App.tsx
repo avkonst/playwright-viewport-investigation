@@ -4,15 +4,16 @@ function App() {
   // render 100 divs full width,
   // spread evently across the entire height of viewport,
   // add number and different color to each item
-  const items = Array.from({ length: 20 }, (_, i) => ({
+  const items = Array.from({ length: 30 }, (_, i) => ({
     id: i,
     color: `hsl(${i * 3.6}, 100%, 50%)`, // Different color for each item
     number: i + 1, // Number from 1 to 100
   }))
   return (
-    <div className="App">
+    <>
       {items.map((item) => (
         <div
+          className='Item'
           key={item.id}
           style={{
             backgroundColor: item.color,
@@ -27,7 +28,7 @@ function App() {
           {item.number}
         </div>
       ))}
-    </div>
+    </>
   )
 }
 
