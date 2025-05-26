@@ -22,7 +22,7 @@ function App() {
             alignItems: 'center',
             justifyContent: 'center',
             color: '#fff',
-            fontSize: '2rem',
+            fontSize: '1rem',
           }}
         >
           {item.number}
